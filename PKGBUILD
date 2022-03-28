@@ -12,28 +12,28 @@
 # Maintainer: Ross Clark <archiv8@artisteducator.com>
 # Contributor: Ross Clark <archiv8@artisteducator.com>
 
-pkgname='perl-cddb-file'
-pkgver='1.05'
-pkgrel='1'
+pkgname="perl-cddb-file"
+pkgver="1.05"
+pkgrel="1"
 pkgdesc="Parse a CDDB/freedb data file"
-arch=('any')
-license=('PerlArtistic' 'GPL')
-options=('!emptydirs')
+arch=("any")
+license=("PerlArtistic" "GPL")
+options=("!emptydirs")
 depends=(
-  'perl'
+  "perl"
 )
 makedepends=()
-url='http://search.cpan.org/dist/CDDB-File'
-source=('http://search.cpan.org/CPAN/authors/id/T/TM/TMTM/CDDB-File-1.05.tar.gz')
-md5sums=('c619e60e86a2bb227d434066c742b189')
-sha512sums=('569294e1b8e26b905915cc4c97dd1fd55d223a662deaba22258a452a5a0fb79e07ec8b0175715a34ad6d6ec3ecce794e04c7e17dd4ee8db22535ef75ef6d09fa')
+url="http://search.cpan.org/dist/CDDB-File"
+source=("http://search.cpan.org/CPAN/authors/id/T/TM/TMTM/CDDB-File-1.05.tar.gz")
+md5sums=("c619e60e86a2bb227d434066c742b189")
+sha512sums=("569294e1b8e26b905915cc4c97dd1fd55d223a662deaba22258a452a5a0fb79e07ec8b0175715a34ad6d6ec3ecce794e04c7e17dd4ee8db22535ef75ef6d09fa")
 _distdir="CDDB-File-1.05"
 
 build() {
   ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""                 \
       PERL_AUTOINSTALL=--skipdeps                            \
-      PERL_MM_OPT="INSTALLDIRS=vendor DESTDIR='$pkgdir'"     \
-      PERL_MB_OPT="--installdirs vendor --destdir '$pkgdir'" \
+      PERL_MM_OPT="INSTALLDIRS=vendor DESTDIR="$pkgdir""     \
+      PERL_MB_OPT="--installdirs vendor --destdir "$pkgdir"" \
       MODULEBUILDRC=/dev/null
 
     cd "$srcdir/$_distdir"
