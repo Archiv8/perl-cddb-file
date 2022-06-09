@@ -1,7 +1,7 @@
 pkgbase = perl-cddb-file
 	pkgdesc = Parse a CDDB/freedb data file
 	pkgver = 1.05
-	pkgrel = 1
+	pkgrel = 2
 	url = http://search.cpan.org/dist/CDDB-File
 	arch = any
 	license = PerlArtistic
@@ -13,4 +13,3 @@ pkgbase = perl-cddb-file
 	sha512sums = 569294e1b8e26b905915cc4c97dd1fd55d223a662deaba22258a452a5a0fb79e07ec8b0175715a34ad6d6ec3ecce794e04c7e17dd4ee8db22535ef75ef6d09fa
 
 pkgname = perl-cddb-file
-
